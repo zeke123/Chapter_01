@@ -57,12 +57,9 @@ public class MainActivity extends Activity {
 
      android:configChanges="orientation"
 
-
-      android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard
+     android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard
              |keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize
              |smallestScreenSize|layoutDirection">
-
-
 
 
      1.2 Activity的启动模式
@@ -88,18 +85,16 @@ public class MainActivity extends Activity {
      只要一个Activity在栈中存在,那么多次启动此Activity都不会重新创建实例
 
      (4)singleInstance(单实例模式)
-
-
-
     */
 
 
     /**
      * Activity 被创建 ,这是生命周期的第一个方法,在这个方法里做一些初始化工作
      * 比如调用setContentView去加载布局文件
-     *
      * @param savedInstanceState
      */
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
