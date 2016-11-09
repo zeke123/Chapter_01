@@ -15,13 +15,9 @@ public class SecondActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         Log.e(TAG, "onCreate()方法执行了");
-
         if(savedInstanceState!=null){
-
             mName = savedInstanceState.getString("name");
-
             Log.e(TAG,"onCreate="+mName);
         }
     }
