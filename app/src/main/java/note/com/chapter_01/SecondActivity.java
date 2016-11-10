@@ -25,7 +25,6 @@ public class SecondActivity extends Activity {
     @Override
     protected void onRestart() {
         super.onRestart();
-
         Log.e(TAG, "onRestart()方法执行了");
     }
 
@@ -59,13 +58,10 @@ public class SecondActivity extends Activity {
         Log.e(TAG, "onDestroy()方法执行了");
     }
 
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-
         outState.putString("name","周建");
-
         Log.e(TAG,"onSaveInstanceState方法执行了");
     }
 
@@ -73,10 +69,7 @@ public class SecondActivity extends Activity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         //快捷键:option+command+f   快速提取变量
-
         String mName =  savedInstanceState.getString("name");
-
         Log.e(TAG,"onRestoreInstanceState="+mName);
-
     }
 }
