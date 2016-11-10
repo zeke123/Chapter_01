@@ -32,7 +32,6 @@ public class MainActivity extends Activity {
 
     (4)当用户按住Back键时 onPause()->onStop()->onDestroy()
 
-
     1.1.2异常情况下的生命周期
 
     (1)当系统配置发生变化时,Activity就会被销毁并且重新创建(比如手机横竖屏切换)
